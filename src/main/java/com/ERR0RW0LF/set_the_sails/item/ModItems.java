@@ -14,7 +14,7 @@ public class ModItems {
         return Registry.register(Registries.ITEM, Identifier.of(Set_the_sails.MOD_ID, name), item);
     }
 
-    private static void registerModItems(){
+    public static void registerModItems(){
         Set_the_sails.LOGGER.info("Registering Mod Items for " + Set_the_sails.MOD_ID);
     }
 
