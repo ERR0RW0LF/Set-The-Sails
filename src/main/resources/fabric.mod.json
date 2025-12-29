@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "set_the_sails",
+  "version": "${version}",
+  "name": "Set The Sails",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/set_the_sails/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.ERR0RW0LF.set_the_sails.client.Set_the_sailsDataGenerator"
+    ],
+    "client": [
+      "com.ERR0RW0LF.set_the_sails.client.Set_the_sailsClient"
+    ],
+    "main": [
+      "com.ERR0RW0LF.set_the_sails.Set_the_sails"
+    ]
+  },
+  "mixins": [
+    "set_the_sails.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
