@@ -1,5 +1,7 @@
 package com.ERR0RW0LF.set_the_sails;
 
+import com.ERR0RW0LF.set_the_sails.block.ModBlocks;
+import com.ERR0RW0LF.set_the_sails.item.ModItemGroups;
 import com.ERR0RW0LF.set_the_sails.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -14,5 +16,7 @@ public class Set_the_sails implements ModInitializer {
     public void onInitialize() {
         LOGGER.info("Started Mod");
         ModItems.registerModItems();
+        ModBlocks.registerModBlocks();
+        ModItemGroups.registerItemGroups();
     }
 }
