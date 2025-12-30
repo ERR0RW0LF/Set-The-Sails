@@ -7,6 +7,5 @@ public class Set_the_sailsClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        ModItems.registerModItems();
     }
 }
