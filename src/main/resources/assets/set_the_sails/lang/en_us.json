@@ -1,4 +1,8 @@
 {
   "item.set_the_sails.plank": "Plank",
-  "itemGroup.set_the_sails.set_the_sails_items": "Set The Sails"
+  "item.set_the_sails.hammer": "Hammer",
+
+  "block.set_the_sails.plank_block": "Plank Block",
+
+  "itemGroup.set_the_sails.set_the_sails_items": "Set The Sails",
 }
