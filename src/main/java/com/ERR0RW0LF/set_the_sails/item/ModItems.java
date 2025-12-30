@@ -18,11 +18,6 @@ public class ModItems {
 
     public static void registerModItems(){
         Set_the_sails.LOGGER.info("Registering Mod Items for " + Set_the_sails.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries ->{
-            entries.add(PLANK);
-        });
-
     }
 
 }
