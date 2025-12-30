@@ -19,6 +19,8 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.PLANK);
                         entries.add(ModBlocks.PLANK_BLOCK);
+
+                        entries.add(ModItems.HAMMER);
                     }).build());
 
     public static void registerItemGroups() {
