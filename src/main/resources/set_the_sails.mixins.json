@@ -4,6 +4,7 @@
   "package": "com.ERR0RW0LF.set_the_sails.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "ExampleMixin"
   ],
   "client": [
   ],

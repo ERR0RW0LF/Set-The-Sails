@@ -6,6 +6,9 @@ import net.minecraft.block.Blocks;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemUsageContext;
+import net.minecraft.particle.BlockStateParticleEffect;
+import net.minecraft.particle.ParticleEffect;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
@@ -39,6 +42,20 @@ public class HammerItem extends Item {
                         item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
 
                 world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.BLOCKS);
+                double x = context.getBlockPos().getX();
+                double y = context.getBlockPos().getY();
+                double z = context.getBlockPos().getZ();
+                ((ServerWorld) world).spawnParticles(
+                        new BlockStateParticleEffect(ParticleTypes.BLOCK, HAMMER_MAP.get(clickedBlock).getDefaultState()),
+                        x + 0.5,
+                        y + 0.5,
+                        z + 0.5,
+                        50,
+                        0.5,
+                        0.5,
+                        0.5,
+                        0.3
+                );
             }
         }
 

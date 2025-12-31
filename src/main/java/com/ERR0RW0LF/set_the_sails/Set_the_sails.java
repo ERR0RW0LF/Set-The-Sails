@@ -17,6 +17,7 @@ public class Set_the_sails implements ModInitializer {
         LOGGER.info("Started Mod");
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
+
         ModItemGroups.registerItemGroups();
     }
 }
